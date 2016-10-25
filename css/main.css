@@ -1,0 +1,135 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.owned:checked + .light::before {
+    background-color: red;
+    border-color: red;
+}
+
+/**********************************
+LOGO
+***********************************/
+#logo {
+    display: block;
+    margin: auto;  
+    max-width: 100%;
+}
+
+/**********************************
+BODY
+***********************************/
+
+body {
+    display: block;
+    margin: 100px auto 0 auto;
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+}
+
+form {
+  max-width: 300px;
+  margin: auto;
+  padding: 10px;
+}
+
+input[type="text"],
+
+/**********************************
+USERNAME
+***********************************/
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+
+/**********************************
+BUTTON
+***********************************/
+button {
+  display: block;
+  padding: 10px;
+  color: #FFF;
+  background-color: #aaa;
+  font-size: 18px;
+  text-decoration:none;
+  text-align: center;
+  font-style: normal;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/**********************************
+CHECK BOX
+***********************************/
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+  border-radius: 30%;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+/**********************************
+CONTACT
+***********************************/
+
+.contact li {
+    display: block;
+    font-size:16px;
+	text-decoration:none;
+    text-align: right;
+    color: #555;
+}
+
+.contact img {
+    padding: 1px;
+    width: 20px;
+    height: 16px;
+    display: inline-block;
+        }
+
+.contact a {
+	text-decoration:none;
+}
+
+
+/**********************************
+
+***********************************/
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
